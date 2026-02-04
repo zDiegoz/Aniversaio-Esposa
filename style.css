@@ -1,0 +1,91 @@
+* {
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff8fab, #ffc2d1);
+}
+
+
+.foto {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff2e63;
+  box-shadow: 0 0 10px #ff2e63,
+              0 0 20px #ff2e63,
+              0 0 40px #ff2e63;
+  animation: brilhoFade 2s infinite alternate;
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.2rem;
+    color: #c9184a;
+}
+
+
+h2 {
+    font-size: 1.2rem;
+    color: #ff4d6d;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+
+.texto {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+button {
+    background: linear-gradient(135deg, #ff8fab, #ffb3c6);
+    border: none;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+.mensagem {
+    margin-top: 22px;
+    font-size: 1.1rem;
+    color: #c9184a;
+    font-weight: 600;
+    display: none;
+}
+
+
+
+
+/* ------------- cel ------------- */
+@media (max-width: 480px) {
+
+
+    .card {
+        border-radius: 30px;
+        padding: 28px 18px;
+    }
+
+
+    .foto-wrapper {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    h1 {
+        font-size: 1.9rem;
+    }
+}
