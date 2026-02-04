@@ -1,38 +1,87 @@
+/* RESET */
+
 * {
-    border-radius: 50%;
-    background: linear-gradient(135deg, #ff8fab, #ffc2d1);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* FUNDO DO SITE */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffe6f0, #ffd6e8);
+    font-family: Arial, sans-serif;
+}
 
+/* CONTAINER CENTRAL */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+.card {
+    background: #ffffffcc;
+    backdrop-filter: blur(12px);
+     padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    
+}
+
+/* FOTO */
 .foto {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #ff2e63;
-  box-shadow: 0 0 10px #ff2e63,
-              0 0 20px #ff2e63,
-              0 0 40px #ff2e63;
-  animation: brilhoFade 2s infinite alternate;
-  display: block;
-  margin: 0 auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 3px solid #ff2e63;
+
+    box-shadow:
+        0 0 10px #ff2e63,
+        0 0 20px #ff2e63,
+        0 0 40px #ff2e63;
+
+    animation: brilhoFade 2s infinite alternate;
+
+    display: block;
+    margin: 0 auto 20px;
 }
 
+/* ANIMAÇÃO BRILHO */
+@keyframes brilhoFade {
+    from {
+        box-shadow:
+            0 0 5px #ff2e63,
+            0 0 10px #ff2e63,
+            0 0 20px #ff2e63;
+    }
+
+    to {
+        box-shadow:
+            0 0 15px #ff2e63,
+            0 0 30px #ff2e63,
+            0 0 60px #ff2e63;
+    }
+}
+
+/* TITULO */
 h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 2.2rem;
     color: #c9184a;
-}
-
-
-h2 {
-    font-size: 1.2rem;
-    color: #ff4d6d;
     margin-bottom: 15px;
-    font-weight: 600;
 }
 
-
+/* TEXTO */
 .texto {
     font-size: 1rem;
     color: #555;
@@ -40,6 +89,7 @@ h2 {
     margin-bottom: 25px;
 }
 
+/* BOTÃO */
 button {
     background: linear-gradient(135deg, #ff8fab, #ffb3c6);
     border: none;
@@ -52,12 +102,11 @@ button {
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
-
 button:hover {
     transform: scale(1.05);
 }
 
-
+/* MENSAGEM */
 .mensagem {
     margin-top: 22px;
     font-size: 1.1rem;
@@ -66,26 +115,21 @@ button:hover {
     display: none;
 }
 
-
-
-
-/* ------------- cel ------------- */
+/* ----------- MOBILE ----------- */
 @media (max-width: 480px) {
 
-
     .card {
-        border-radius: 30px;
-        padding: 28px 18px;
+        padding: 25px 18px;
+        border-radius: 22px;
     }
 
-
-    .foto-wrapper {
+    .foto {
         width: 150px;
         height: 150px;
     }
 
-
     h1 {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
+
 }
